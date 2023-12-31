@@ -1,3 +1,4 @@
+pub mod company_query;
 pub mod subordinates;
 pub mod tree_diameter;
 pub mod tree_distance;

@@ -2,13 +2,15 @@ mod input;
 mod tree;
 
 fn main() {
-    read!(n as usize);
-    let mut edges: Vec<Vec<usize>> = Vec::new();
+    read_vec!(sizes as usize);
+    read_vec!(bosses as usize);
+    let (n, q) = (sizes[0], sizes[1]);
+    let mut queries: Vec<Vec<usize>> = Vec::new();
 
-    for _i in 0..(n - 1) {
-        read_vec!(edge as usize);
-        edges.push(edge);
+    for _ in 0..q {
+        read_vec!(query as usize);
+        queries.push(query);
     }
 
-    tree::tree_distance_2::main(&edges);
+    tree::company_query::main(n, q, bosses, queries);
 }
