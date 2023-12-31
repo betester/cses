@@ -10,5 +10,5 @@ fn main() {
         edges.push(edge);
     }
 
-    tree::tree_diameter::main(edges);
+    tree::tree_distance_2::main(&edges);
 }
