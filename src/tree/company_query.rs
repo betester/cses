@@ -1,7 +1,5 @@
 use std::{cmp::max, collections::HashMap};
 
-use crate::read_vec;
-
 fn get_tree_height(tree: &HashMap<usize, Vec<usize>>, root: usize, prev: usize) -> usize {
     let mut height = 0;
     if let Some(val) = tree.get(&root) {
@@ -28,7 +26,7 @@ fn find_parent(dp: &Vec<Vec<usize>>, i: usize, k: usize) -> usize {
     }
 }
 
-pub fn main(n: usize, q: usize, bosses: Vec<usize>, queries: Vec<Vec<usize>>) {
+pub fn main(n: usize, bosses: Vec<usize>, queries: Vec<Vec<usize>>) {
     let mut tree: HashMap<usize, Vec<usize>> = HashMap::new();
 
     for i in 0..(n - 1) {

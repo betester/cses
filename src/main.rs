@@ -4,6 +4,7 @@ mod tree;
 fn main() {
     read_vec!(sizes as usize);
     read_vec!(bosses as usize);
+
     let (n, q) = (sizes[0], sizes[1]);
     let mut queries: Vec<Vec<usize>> = Vec::new();
 
@@ -12,5 +13,5 @@ fn main() {
         queries.push(query);
     }
 
-    tree::company_query::main(n, q, bosses, queries);
+    tree::company_query::main(n, bosses, queries);
 }
