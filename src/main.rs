@@ -3,5 +3,5 @@ mod search;
 mod tree;
 
 fn main() {
-    search::apartments::main();
+    search::ferris_wheel::main();
 }
