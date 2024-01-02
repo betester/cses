@@ -3,5 +3,5 @@ mod search;
 mod tree;
 
 fn main() {
-    tree::counting_path::main();
+    search::apartments::main();
 }
