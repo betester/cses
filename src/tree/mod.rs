@@ -1,5 +1,6 @@
 pub mod company_query;
 pub mod company_query_2;
+pub mod counting_path;
 pub mod distance_query;
 pub mod subordinates;
 pub mod tree_diameter;
