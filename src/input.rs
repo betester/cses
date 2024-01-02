@@ -24,7 +24,7 @@ macro_rules! read_vec {
         let $out = inner
             .trim()
             .split_whitespace()
-            .map(|s| s.parse::<$type>().unwrap())
+            .map(|s| s.parse::<$type>().expect("Should match with the type"))
             .collect::<Vec<$type>>();
     };
 }
