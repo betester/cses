@@ -3,5 +3,5 @@ mod search;
 mod tree;
 
 fn main() {
-    search::ferris_wheel::main();
+    tree::subtree_query::main();
 }
